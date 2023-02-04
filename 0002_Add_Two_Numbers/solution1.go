@@ -6,10 +6,10 @@ type ListNode struct {
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	return addTwoNumbers2(l1, l2, 0)
+	return addTwoNumbersRecursive(l1, l2, 0)
 }
 
-func addTwoNumbers2(l1 *ListNode, l2 *ListNode, addendum int) *ListNode {
+func addTwoNumbersRecursive(l1 *ListNode, l2 *ListNode, addendum int) *ListNode {
 	sum := addendum
 	if l1 != nil {
 		sum += l1.Val
@@ -30,7 +30,7 @@ func addTwoNumbers2(l1 *ListNode, l2 *ListNode, addendum int) *ListNode {
 
 		result := &ListNode{
 			Val:  sum % 10,
-			Next: addTwoNumbers2(l1Next, l2Next, sum/10),
+			Next: addTwoNumbersRecursive(l1Next, l2Next, sum/10),
 		}
 
 		return result
