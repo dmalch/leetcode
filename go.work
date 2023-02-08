@@ -1,6 +1,7 @@
 go 1.19
 
 use (
+	0000_Template
 	0001_Two_Sum
 	0002_Add_Two_Numbers
 	0003_Longest_Substring_Without_Repeating_Characters
