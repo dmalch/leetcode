@@ -7,4 +7,5 @@ use (
 	0003_Longest_Substring_Without_Repeating_Characters
 	0004_Median_of_Two_Sorted_Arrays
 	0005_Longest_Palindromic_Substring
+	0006_Zigzag_Conversion
 )
